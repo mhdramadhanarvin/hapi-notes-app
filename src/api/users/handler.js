@@ -54,7 +54,6 @@ class UsersHandler {
     try {
       const { id } = request.params;
       const user = await this._service.getUserById(id);
-
       return {
         status: "success",
         data: {
